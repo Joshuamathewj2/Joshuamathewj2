@@ -108,7 +108,7 @@ Exploration and implementation of techniques to detect and mitigate prompt injec
 
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Joshuamathewj2&theme=tokyonight)
 
-
+---
 <!-- ===================== VISITOR COUNTER ===================== -->
 
 <p align="center">
