@@ -2,6 +2,8 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,100:004e92&height=200&section=header&text=JOSHUA&fontSize=50&fontColor=00eaff&animation=fadeIn" />
 </p>
 
+
+
 <!-- ===================== ABOUT ===================== -->
 
 ## 🧠 About Me
