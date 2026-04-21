@@ -1,6 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,100:004e92&height=200&section=header&text=░░█ █▀█ █▀ █░█ █░█ ▄▀█
-█▄█ █▄█ ▄█ █▀█ █▄█ █▀█&fontSize=50&fontColor=00eaff&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,100:004e92&height=200&section=header&text=𝒋𝒐𝒔𝒉𝒖𝒂&fontSize=50&fontColor=00eaff&animation=fadeIn" />
 </p>
 
 
