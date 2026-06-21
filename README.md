@@ -102,8 +102,6 @@ Exploration and implementation of techniques to detect and mitigate prompt injec
 
 # 📊 GitHub Stats
 
-![](https://github-readme-stats.vercel.app/api?username=Joshuamathewj2&show_icons=true&theme=tokyonight)
-
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Joshuamathewj2&layout=compact&theme=tokyonight)
 
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Joshuamathewj2&theme=tokyonight)
