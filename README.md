@@ -1,6 +1,11 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,100:004e92&height=220&section=header&text=def%20Joshua():%20return%20%22Code.%20Create.%20Conquer.%22&fontSize=38&fontColor=00eaff&animation=fadeIn&fontAlignY=38&desc=~/legendary_dev_mode&descAlignY=60&descSize=18" />
-</p>
+<!-- ===== THEME-AWARE HERO BANNER ===== -->
+<!-- GitHub automatically shows dark.svg in dark mode and light.svg in light mode -->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Joshuamathewj2/Joshuamathewj2/main/josh-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Joshuamathewj2/Joshuamathewj2/main/josh-light.svg">
+  <img alt="Joshua Mathew" src="https://raw.githubusercontent.com/Joshuamathewj2/Joshuamathewj2/main/josh-light.svg">
+</picture>
 
 
 
@@ -22,6 +27,14 @@
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Joshuamathewj2&theme=tokyo-night" />
 </p>
+
+---
+
+<!-- ===================== PORTRAIT ===================== -->
+
+<div align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/Joshuamathewj2/Joshuamathewj2/main/josh.svg" alt="Joshua Mathew - Dot Reconstruction" />
+</div>
 
 ---
 
