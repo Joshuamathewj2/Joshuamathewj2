@@ -30,14 +30,6 @@
 
 ---
 
-<!-- ===================== PORTRAIT ===================== -->
-
-<div align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Joshuamathewj2/Joshuamathewj2/main/josh.svg" alt="Joshua Mathew - Dot Reconstruction" />
-</div>
-
----
-
 # 💻 Tech Stack
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -70,13 +62,6 @@ System for detecting whether an image is AI-generated or authentic using signal 
 ### SilentWords  
 Assistive communication system designed to translate gestures / inputs into meaningful output, enabling improved interaction for accessibility-focused environments.  
 **Tech:** Python, Computer Vision, AI  
-
----
-
-### Debatrix  
-AI-assisted debate and reasoning system that generates, analyzes, and evaluates structured arguments using language models and logical reasoning approaches.  
-**Tech:** Python, LLM, NLP  
-
 ---
 
 ### GIS Disaster Mapping System  
@@ -89,11 +74,6 @@ Geospatial intelligence system for identifying disaster-prone regions and improv
 AI-driven analytical platform focused on evaluating signals, patterns, or behavioral indicators to generate meaningful insights for decision-making.  
 **Tech:** Python, Data Analysis, AI  
 
----
-
-### Prompt Injection Study & Defense  
-Exploration and implementation of techniques to detect and mitigate prompt injection vulnerabilities in AI systems, focusing on secure prompt design and adversarial behavior handling.  
-**Tech:** AI Security, Prompt Engineering, LLM Safety  
 <!-- ===================== CONNECT ===================== -->
 ---
 ## 🌐 Connect with me
