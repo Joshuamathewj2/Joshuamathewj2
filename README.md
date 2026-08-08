@@ -1,11 +1,3 @@
-<!-- ===== THEME-AWARE HERO BANNER ===== -->
-<!-- GitHub automatically shows dark.svg in dark mode and light.svg in light mode -->
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Joshuamathewj2/Joshuamathewj2/main/josh-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Joshuamathewj2/Joshuamathewj2/main/josh-light.svg">
-  <img alt="Joshua Mathew" src="https://raw.githubusercontent.com/Joshuamathewj2/Joshuamathewj2/main/josh-light.svg">
-</picture>
 
 
 
