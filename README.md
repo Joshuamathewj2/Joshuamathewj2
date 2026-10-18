@@ -1,17 +1,19 @@
 <div align="center">
 
 <!-- ═══════════════════════════════════════════════════════════════════════════
-     01 // ANIMATED PURPLE CYBERPUNK HERO BANNER
+     01 // ANIMATED PURPLE MATRIX & 3D REACTOR HERO HUD
 ════════════════════════════════════════════════════════════════════════════ -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:050507,30:1e1b4b,65:4F46E5,100:a855f7&height=230&section=header&text=JOSHUA%20A.&fontSize=76&fontColor=F5F5F5&fontAlignY=42&desc=%E2%9A%A1%20AI%20AGENTS%20%C2%B7%20COMPUTER%20VISION%20%C2%B7%20FULL-STACK%20%C2%B7%203D%20WEB%20%E2%9A%A1&descSize=15&descAlignY=68&animation=fadeIn&stroke=C084FC&strokeWidth=1" alt="Joshua A Banner" />
+<img src="./hero-matrix-hud.svg" width="100%" alt="Joshua A — Animated Purple Matrix & Reactor HUD" />
+
+<br />
 
 <!-- ── Dual Animated Glowing Typewriters ── -->
 <a href="https://github.com/Joshuamathewj2">
-  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=26&duration=2600&pause=800&color=A855F7&background=05050500&center=true&vCenter=true&width=850&height=45&lines=ARCHITECTING+AUTONOMOUS+AI+AGENTS;REAL-TIME+COMPUTER+VISION+%26+3D+HUDs;IMMERSIVE+FULL-STACK+%26+WEBGL+EXPERIENCES;TALK+IS+CHEAP.+SHOW+ME+THE+CODE." alt="Headline Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=25&duration=2600&pause=700&color=A855F7&background=05050500&center=true&vCenter=true&width=860&height=42&lines=ARCHITECTING+AUTONOMOUS+AI+AGENTS;REAL-TIME+COMPUTER+VISION+%26+3D+HUDs;IMMERSIVE+FULL-STACK+%26+WEBGL+EXPERIENCES;TALK+IS+CHEAP.+SHOW+ME+THE+CODE." alt="Headline Typing Animation" />
 </a>
 <br />
 <a href="https://github.com/Joshuamathewj2">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=13&duration=3200&pause=1000&color=38BDF8&background=05050500&center=true&vCenter=true&width=760&height=28&lines=%3E+status%3A+open_to_internships+%2F%2F+LICET+CSE+'28+(8.9+CGPA);%3E+rank+%2311+%2F+1%2C773+%40+HackerRank+Orchestrate+AI+Challenge;%3E+stack%3A+Python+%C2%B7+TypeScript+%C2%B7+React+19+%C2%B7+Next.js+%C2%B7+FastAPI+%C2%B7+Three.js" alt="Sub-Telemetry Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=13&duration=3200&pause=900&color=38BDF8&background=05050500&center=true&vCenter=true&width=760&height=26&lines=%3E+status%3A+open_to_internships+%2F%2F+LICET+CSE+'28+(8.9+CGPA);%3E+rank+%2311+%2F+1%2C773+%40+HackerRank+Orchestrate+AI+Challenge;%3E+stack%3A+Python+%C2%B7+TypeScript+%C2%B7+React+19+%C2%B7+Next.js+%C2%B7+FastAPI+%C2%B7+Three.js" alt="Sub-Telemetry Typing Animation" />
 </a>
 
 <br /><br />
@@ -30,18 +32,16 @@
   <img src="https://img.shields.io/badge/CORE-SYNC_ACTIVE-10B981?style=for-the-badge&labelColor=08080E&logo=statuspage&logoColor=10B981" alt="Sync Active" />
 </p>
 
-<img src="./public/readme-divider.svg" width="100%" alt="Animated Divider" />
+<img src="./readme-divider.svg" width="100%" alt="Animated Divider" />
 
 <!-- ═══════════════════════════════════════════════════════════════════════════
      02 // ANIMATED NEURAL CORE & LIVE DATA PACKET NETWORK
 ════════════════════════════════════════════════════════════════════════════ -->
+<img src="./readme-neural-core.svg" width="100%" alt="Animated Neural Core Architecture" />
+
 <br />
 
-<img src="./public/readme-neural-core.svg" width="100%" alt="Animated Neural Core Architecture" />
-
-<br /><br />
-
-<img src="./public/readme-divider.svg" width="100%" alt="Animated Divider" />
+<img src="./readme-divider.svg" width="100%" alt="Animated Divider" />
 
 <!-- ═══════════════════════════════════════════════════════════════════════════
      03 // VISUAL TECH ARSENAL (ICON DOCKS)
@@ -69,16 +69,21 @@
 </tr>
 </table>
 
-<img src="./public/readme-divider.svg" width="100%" alt="Animated Divider" />
+<img src="./readme-divider.svg" width="100%" alt="Animated Divider" />
 
 <!-- ═══════════════════════════════════════════════════════════════════════════
-     04 // VISUAL SHOWCASE MATRIX — DEPLOYED BUILDS
+     04 // ANIMATED GLASS COIN ORBIT & DEPLOYED SYSTEMS MATRIX
 ════════════════════════════════════════════════════════════════════════════ -->
 <a href="https://github.com/Joshuamathewj2?tab=repositories">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=4000&pause=1500&color=C084FC&background=05050500&center=true&vCenter=true&width=520&height=34&lines=%2F%2F+DEPLOYED+SYSTEMS+%3A%3A+VISUAL+TELEMETRY" alt="Systems Header" />
 </a>
 
 <br />
+
+<!-- Animated Glass Coin Orbit SVG -->
+<img src="./purple-matrix-systems.svg" width="100%" alt="Animated Glass Coin Telemetry Orbit" />
+
+<br /><br />
 
 <table>
 <tr>
@@ -152,19 +157,19 @@
   <img src="https://img.shields.io/badge/%F0%9F%8E%93_NPTEL_GOLD_ELITE-IIT_MADRAS_(JAVA)-38BDF8?style=for-the-badge&labelColor=08080E" alt="NPTEL Gold Elite" />
 </p>
 
-<img src="./public/readme-divider.svg" width="100%" alt="Animated Divider" />
+<img src="./readme-divider.svg" width="100%" alt="Animated Divider" />
 
 <!-- ═══════════════════════════════════════════════════════════════════════════
-     05 // CREATIVE PURPLE CONTRIBUTION CHART ANIMATIONS
+     05 // CREATIVE PURPLE CONTRIBUTION MATRIX & SPECTRUM ANIMATIONS
 ════════════════════════════════════════════════════════════════════════════ -->
 <a href="https://github.com/Joshuamathewj2">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=3800&pause=1200&color=C084FC&background=05050500&center=true&vCenter=true&width=580&height=34&lines=%2F%2F+PURPLE+PULSE+%3A%3A+CONTRIBUTION+TELEMETRY" alt="Contribution Telemetry Header" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=3800&pause=1200&color=C084FC&background=05050500&center=true&vCenter=true&width=580&height=34&lines=%2F%2F+PURPLE+MATRIX+%3A%3A+CONTRIBUTION+SPECTRUM" alt="Contribution Telemetry Header" />
 </a>
 
 <br />
 
-<!-- 1. Custom Animated Purple Cyber-Matrix, Laser Scanner & Spline Wave -->
-<img src="./public/readme-contrib-cyber.svg" width="100%" alt="Animated Purple Contribution Matrix & Velocity Wave" />
+<!-- 1. Custom Animated 36x6 Purple Matrix + Radar Sweep + Dual Spline Wave + 36 Equalizer Towers -->
+<img src="./readme-contrib-cyber.svg" width="100%" alt="Animated Purple Contribution Matrix & Equalizer Spectrum" />
 
 <br /><br />
 

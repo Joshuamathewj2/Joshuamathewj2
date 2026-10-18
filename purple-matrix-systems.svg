@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSys" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040407"/>
+      <stop offset="50%" stop-color="#0A0716"/>
+      <stop offset="100%" stop-color="#040407"/>
+    </linearGradient>
+
+    <linearGradient id="coinRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+
+    <filter id="glowSys" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="sysGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#7C3AED" stroke-width="0.5" stroke-opacity="0.14"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .hdr { font: 800 12px 'JetBrains Mono', Consolas, monospace; fill: #F5F5F5; letter-spacing: 2.5px; }
+    .coin-no { font: 700 8.5px 'JetBrains Mono', Consolas, monospace; fill: #38BDF8; letter-spacing: 2px; }
+    .coin-name { font: 900 11px 'Arial Black', sans-serif; fill: #FFFFFF; letter-spacing: 1px; }
+    .coin-tag { font: 600 8px 'JetBrains Mono', Consolas, monospace; fill: #C084FC; letter-spacing: 1px; }
+    .orbit-line {
+      stroke-dasharray: 10 14;
+      animation: orbitFlow 2.4s linear infinite;
+    }
+    @keyframes orbitFlow {
+      to { stroke-dashoffset: -48; }
+    }
+  </style>
+
+  <rect width="960" height="320" rx="20" fill="url(#bgSys)" stroke="#27272A" stroke-width="1.5"/>
+  <rect width="960" height="320" rx="20" fill="url(#sysGrid)"/>
+
+  <!-- Header -->
+  <g transform="translate(36, 26)">
+    <circle cx="6" cy="6" r="4" fill="#38BDF8" filter="url(#glowSys)">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="20" y="10" class="hdr">INTERACTIVE TELEMETRY ORBIT // 6 CORE ARCHITECTURES</text>
+    <text x="720" y="10" class="coin-no">ORBIT_STATE // ACTIVE</text>
+  </g>
+
+  <!-- Horizontal Orbital Energy Conduit -->
+  <path d="M 95 168 Q 480 120, 865 168" fill="none" stroke="#4F46E5" stroke-width="1.5" opacity="0.45"/>
+  <path d="M 95 168 Q 480 216, 865 168" fill="none" stroke="#a855f7" stroke-width="2" class="orbit-line" filter="url(#glowSys)"/>
+
+  <!-- ═══ COIN 1: MIRAGE (x=95) ═══ -->
+  <g transform="translate(95, 168)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+      <circle r="58" fill="none" stroke="url(#coinRing)" stroke-width="2.5" stroke-dasharray="60 30" filter="url(#glowSys)"/>
+    </g>
+    <circle r="50" fill="#07060E" stroke="#27272A" stroke-width="1.2"/>
+    <circle r="44" fill="none" stroke="#a855f7" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.5"/>
+    <text x="0" y="-14" text-anchor="middle" class="coin-no">COIN 01</text>
+    <text x="0" y="5" text-anchor="middle" class="coin-name">MIRAGE</text>
+    <text x="0" y="22" text-anchor="middle" class="coin-tag">AI DIGITAL TWIN</text>
+  </g>
+
+  <!-- ═══ COIN 2: ANALYSER (x=249) ═══ -->
+  <g transform="translate(249, 152)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="7s" repeatCount="indefinite"/>
+      <circle r="58" fill="none" stroke="url(#coinRing)" stroke-width="2.5" stroke-dasharray="60 30" filter="url(#glowSys)"/>
+    </g>
+    <circle r="50" fill="#07060E" stroke="#27272A" stroke-width="1.2"/>
+    <circle r="44" fill="none" stroke="#38BDF8" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.5"/>
+    <text x="0" y="-14" text-anchor="middle" class="coin-no">COIN 02</text>
+    <text x="0" y="5" text-anchor="middle" class="coin-name">ANALYSER</text>
+    <text x="0" y="22" text-anchor="middle" class="coin-tag">RANK #11 / 1773</text>
+  </g>
+
+  <!-- ═══ COIN 3: RESQ (x=403) ═══ -->
+  <g transform="translate(403, 168)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6.5s" repeatCount="indefinite"/>
+      <circle r="58" fill="none" stroke="url(#coinRing)" stroke-width="2.5" stroke-dasharray="60 30" filter="url(#glowSys)"/>
+    </g>
+    <circle r="50" fill="#07060E" stroke="#27272A" stroke-width="1.2"/>
+    <circle r="44" fill="none" stroke="#a855f7" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.5"/>
+    <text x="0" y="-14" text-anchor="middle" class="coin-no">COIN 03</text>
+    <text x="0" y="5" text-anchor="middle" class="coin-name">RESQ AI</text>
+    <text x="0" y="22" text-anchor="middle" class="coin-tag">SENSOR FUSION</text>
+  </g>
+
+  <!-- ═══ COIN 4: PILLPULSE (x=557) ═══ -->
+  <g transform="translate(557, 152)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="7.5s" repeatCount="indefinite"/>
+      <circle r="58" fill="none" stroke="url(#coinRing)" stroke-width="2.5" stroke-dasharray="60 30" filter="url(#glowSys)"/>
+    </g>
+    <circle r="50" fill="#07060E" stroke="#27272A" stroke-width="1.2"/>
+    <circle r="44" fill="none" stroke="#38BDF8" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.5"/>
+    <text x="0" y="-14" text-anchor="middle" class="coin-no">COIN 04</text>
+    <text x="0" y="5" text-anchor="middle" class="coin-name">PILLPULSE</text>
+    <text x="0" y="22" text-anchor="middle" class="coin-tag">OCR + N8N</text>
+  </g>
+
+  <!-- ═══ COIN 5: AURA-X1 (x=711) ═══ -->
+  <g transform="translate(711, 168)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+      <circle r="58" fill="none" stroke="url(#coinRing)" stroke-width="2.5" stroke-dasharray="60 30" filter="url(#glowSys)"/>
+    </g>
+    <circle r="50" fill="#07060E" stroke="#27272A" stroke-width="1.2"/>
+    <circle r="44" fill="none" stroke="#a855f7" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.5"/>
+    <text x="0" y="-14" text-anchor="middle" class="coin-no">COIN 05</text>
+    <text x="0" y="5" text-anchor="middle" class="coin-name">AURA-X1</text>
+    <text x="0" y="22" text-anchor="middle" class="coin-tag">3D WEBGL + R3F</text>
+  </g>
+
+  <!-- ═══ COIN 6: HOLOGRAM (x=865) ═══ -->
+  <g transform="translate(865, 152)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="8.5s" repeatCount="indefinite"/>
+      <circle r="58" fill="none" stroke="url(#coinRing)" stroke-width="2.5" stroke-dasharray="60 30" filter="url(#glowSys)"/>
+    </g>
+    <circle r="50" fill="#07060E" stroke="#27272A" stroke-width="1.2"/>
+    <circle r="44" fill="none" stroke="#38BDF8" stroke-width="0.8" stroke-dasharray="4 4" opacity="0.5"/>
+    <text x="0" y="-14" text-anchor="middle" class="coin-no">COIN 06</text>
+    <text x="0" y="5" text-anchor="middle" class="coin-name">HOLOGRAM</text>
+    <text x="0" y="22" text-anchor="middle" class="coin-tag">30FPS CV HUD</text>
+  </g>
+
+  <!-- Footer Status -->
+  <text x="480" y="294" text-anchor="middle" class="coin-tag" style="fill:#71717A;letter-spacing:3px;">// GLASS COIN TELEMETRY ORBIT // 10 PRODUCTION SYSTEMS DEPLOYED //</text>
+</svg>
