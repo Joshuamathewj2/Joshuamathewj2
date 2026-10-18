@@ -1,215 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 390" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040407"/>
-      <stop offset="50%" stop-color="#0B0718"/>
-      <stop offset="100%" stop-color="#040407"/>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06060A"/>
+      <stop offset="100%" stop-color="#090812"/>
     </linearGradient>
 
-    <linearGradient id="waveStroke1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4F46E5"/>
-      <stop offset="45%" stop-color="#a855f7"/>
-      <stop offset="75%" stop-color="#C084FC"/>
+    <linearGradient id="lineStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="50%" stop-color="#A855F7"/>
       <stop offset="100%" stop-color="#38BDF8"/>
     </linearGradient>
 
-    <linearGradient id="waveStroke2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="50%" stop-color="#7C3AED"/>
-      <stop offset="100%" stop-color="#E9D5FF"/>
+    <linearGradient id="softFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#06060A" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="waveArea" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.42"/>
-      <stop offset="65%" stop-color="#4F46E5" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#040407" stop-opacity="0"/>
-    </linearGradient>
-
-    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#E9D5FF"/>
-      <stop offset="35%" stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#312E81"/>
-    </linearGradient>
-
-    <linearGradient id="cyanBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#E0F2FE"/>
-      <stop offset="40%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#4F46E5"/>
-    </linearGradient>
-
-    <linearGradient id="scanSweep" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#C084FC" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.9"/>
-    </linearGradient>
-
-    <filter id="neon" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
+    <filter id="crispGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
       <feMerge>
         <feMergeNode in="b"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <pattern id="matrixDots" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.8" fill="#a855f7" opacity="0.18"/>
-    </pattern>
-
-    <path id="commitWaveA" d="M 40 122 C 115 112, 145 58, 215 78 C 285 98, 315 42, 390 66 C 465 90, 495 34, 570 58 C 645 82, 685 28, 760 50 C 825 68, 865 26, 920 40" fill="none"/>
-    <path id="commitWaveB" d="M 40 128 C 120 88, 165 118, 240 84 C 315 50, 355 106, 430 72 C 505 38, 545 96, 620 64 C 695 32, 745 86, 820 56 C 870 36, 895 66, 920 48" fill="none"/>
+    <path id="commitCurve" d="M 75 138 C 125 132, 145 96, 195 104 C 245 112, 275 74, 325 84 C 375 94, 405 62, 455 76 C 505 90, 535 54, 585 68 C 635 82, 665 48, 715 62 C 765 76, 800 44, 850 54 C 880 60, 898 42, 915 46" fill="none"/>
   </defs>
 
   <style>
-    .hud-title { font: 800 12px 'JetBrains Mono', Consolas, monospace; fill: #F5F5F5; letter-spacing: 2.5px; }
-    .hud-sub { font: 600 9.5px 'JetBrains Mono', Consolas, monospace; fill: #C084FC; letter-spacing: 2px; }
-    .hud-stat { font: 700 10px 'JetBrains Mono', Consolas, monospace; fill: #38BDF8; letter-spacing: 1.5px; }
-    .cell { rx: 3.5px; ry: 3.5px; }
-    .c0 { fill: #110E1C; stroke: #1F1933; stroke-width: 0.6; }
-    .c1 { fill: #2E1B5B; animation: p1 3.4s ease-in-out infinite; }
-    .c2 { fill: #4F46E5; animation: p2 2.6s ease-in-out infinite; }
-    .c3 { fill: #7C3AED; animation: p3 2.1s ease-in-out infinite; }
-    .c4 { fill: #A855F7; animation: p4 1.7s ease-in-out infinite; }
-    .c5 { fill: #C084FC; filter: url(#neon); animation: p5 1.4s ease-in-out infinite; }
-
-    @keyframes p1 { 0%,100% { opacity: 0.45; } 50% { opacity: 0.95; } }
-    @keyframes p2 { 0%,100% { opacity: 0.65; } 50% { opacity: 1; fill: #6366F1; } }
-    @keyframes p3 { 0%,100% { opacity: 0.72; } 50% { opacity: 1; fill: #9333EA; } }
-    @keyframes p4 { 0%,100% { opacity: 0.78; } 50% { opacity: 1; fill: #D8B4FE; } }
-    @keyframes p5 { 0%,100% { opacity: 0.85; } 50% { opacity: 1; fill: #38BDF8; } }
+    .hdr-title { font: 800 12px 'JetBrains Mono', Consolas, monospace; fill: #F5F5F5; letter-spacing: 2px; }
+    .hdr-stat { font: 700 10px 'JetBrains Mono', Consolas, monospace; fill: #38BDF8; letter-spacing: 1.5px; }
+    .axis-lbl { font: 600 9px 'JetBrains Mono', Consolas, monospace; fill: #71717A; letter-spacing: 1px; }
+    .month-lbl { font: 700 9px 'JetBrains Mono', Consolas, monospace; fill: #A1A1AA; letter-spacing: 1.5px; }
+    .cell { rx: 3px; ry: 3px; stroke: #07060C; stroke-width: 1px; }
+    .l0 { fill: #13111C; }
+    .l1 { fill: #2E1B5B; }
+    .l2 { fill: #4F46E5; }
+    .l3 { fill: #7C3AED; }
+    .l4 { fill: #A855F7; }
+    .l5 { fill: #C084FC; }
   </style>
 
-  <!-- Outer Frame -->
-  <rect width="960" height="440" rx="20" fill="url(#bg)" stroke="#27272A" stroke-width="1.5"/>
-  <rect width="960" height="440" rx="20" fill="url(#matrixDots)"/>
+  <!-- Outer Crisp Container -->
+  <rect width="960" height="390" rx="16" fill="url(#cardBg)" stroke="#27272A" stroke-width="1.5"/>
 
-  <!-- HUD Header Bar -->
-  <g transform="translate(36, 26)">
-    <circle cx="6" cy="6" r="4.5" fill="#a855f7" filter="url(#neon)">
-      <animate attributeName="r" values="3.5;6.5;3.5" dur="1.6s" repeatCount="indefinite"/>
+  <!-- Subtle Animated Perimeter Trace Line -->
+  <rect x="1.5" y="1.5" width="957" height="387" rx="15" fill="none" stroke="url(#lineStroke)" stroke-width="1.5" stroke-dasharray="140 2600" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" from="2740" to="0" dur="10s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Header Row -->
+  <g transform="translate(32, 26)">
+    <circle cx="6" cy="6" r="4" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <text x="20" y="10" class="hud-title">PURPLE MATRIX // HOLOGRAPHIC CONTRIBUTION SPECTRUM</text>
-    <text x="695" y="10" class="hud-stat">TELEMETRY_MODE // 60FPS</text>
+    <text x="18" y="10" class="hdr-title">CONTRIBUTION TELEMETRY // COMMIT VELOCITY &amp; ANNUAL MATRIX</text>
+    <text x="720" y="10" class="hdr-stat">37 REPOS // ACTIVE</text>
   </g>
 
-  <!-- ═══ SECTION 1: DUAL INTERTWINED COMMIT SPLINE WAVEFORM (TOP) ═══ -->
-  <path d="M 40 122 C 115 112, 145 58, 215 78 C 285 98, 315 42, 390 66 C 465 90, 495 34, 570 58 C 645 82, 685 28, 760 50 C 825 68, 865 26, 920 40 L 920 140 L 40 140 Z" fill="url(#waveArea)"/>
+  <!-- ═══ TOP PANEL: CRISP COMMIT VELOCITY GRAPH ═══ -->
+  <!-- Horizontal Reference Lines & Y-Axis Labels -->
+  <g stroke="#1E1B2E" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="75" y1="50" x2="915" y2="50"/>
+    <line x1="75" y1="82" x2="915" y2="82"/>
+    <line x1="75" y1="114" x2="915" y2="114"/>
+    <line x1="75" y1="146" x2="915" y2="146"/>
+  </g>
+  <text x="34" y="53" class="axis-lbl">45+</text>
+  <text x="34" y="85" class="axis-lbl">30</text>
+  <text x="34" y="117" class="axis-lbl">15</text>
+  <text x="34" y="149" class="axis-lbl">00</text>
 
-  <!-- Secondary Harmonic Wave -->
-  <use href="#commitWaveB" stroke="url(#waveStroke2)" stroke-width="1.8" stroke-dasharray="6 8" opacity="0.75" filter="url(#neon)"/>
-  <!-- Primary Commit Wave -->
-  <use href="#commitWaveA" stroke="url(#waveStroke1)" stroke-width="3.2" stroke-linecap="round" filter="url(#neon)"/>
+  <!-- Soft Subtle Area Under Curve -->
+  <path d="M 75 138 C 125 132, 145 96, 195 104 C 245 112, 275 74, 325 84 C 375 94, 405 62, 455 76 C 505 90, 535 54, 585 68 C 635 82, 665 48, 715 62 C 765 76, 800 44, 850 54 C 880 60, 898 42, 915 46 L 915 146 L 75 146 Z" fill="url(#softFill)"/>
 
-  <!-- Animated Energy Orbs Gliding Along Both Waves -->
-  <circle r="5.5" fill="#FFFFFF" stroke="#a855f7" stroke-width="2.5" filter="url(#neon)">
-    <animateMotion dur="3.8s" repeatCount="indefinite"><mpath href="#commitWaveA"/></animateMotion>
-  </circle>
-  <circle r="4.5" fill="#38BDF8" filter="url(#neon)">
-    <animateMotion dur="3.8s" begin="1.9s" repeatCount="indefinite"><mpath href="#commitWaveA"/></animateMotion>
-  </circle>
-  <circle r="4" fill="#C084FC" filter="url(#neon)">
-    <animateMotion dur="4.6s" begin="0.7s" repeatCount="indefinite"><mpath href="#commitWaveB"/></animateMotion>
-  </circle>
+  <!-- Crisp Main Commit Curve -->
+  <use href="#commitCurve" stroke="url(#lineStroke)" stroke-width="2.6" stroke-linecap="round" filter="url(#crispGlow)"/>
 
-  <!-- Pulsing Harmonic Nodes -->
-  <g filter="url(#neon)">
-    <circle cx="215" cy="78" r="4" fill="#a855f7"><animate attributeName="r" values="3;6.5;3" dur="1.8s" repeatCount="indefinite"/></circle>
-    <circle cx="390" cy="66" r="4" fill="#C084FC"><animate attributeName="r" values="3;6.5;3" dur="1.5s" repeatCount="indefinite"/></circle>
-    <circle cx="570" cy="58" r="4" fill="#38BDF8"><animate attributeName="r" values="3;6.5;3" dur="2.1s" repeatCount="indefinite"/></circle>
-    <circle cx="760" cy="50" r="4" fill="#a855f7"><animate attributeName="r" values="3;6.5;3" dur="1.7s" repeatCount="indefinite"/></circle>
-    <circle cx="920" cy="40" r="4.5" fill="#38BDF8"><animate attributeName="r" values="3.5;7.5;3.5" dur="1.4s" repeatCount="indefinite"/></circle>
+  <!-- Crisp Data Nodes on Curve -->
+  <g fill="#090812" stroke="#C084FC" stroke-width="2">
+    <circle cx="75" cy="138" r="3.5"/>
+    <circle cx="195" cy="104" r="3.5"/>
+    <circle cx="325" cy="84" r="3.5"/>
+    <circle cx="455" cy="76" r="3.5"/>
+    <circle cx="585" cy="68" r="3.5"/>
+    <circle cx="715" cy="62" r="3.5"/>
+    <circle cx="850" cy="54" r="3.5"/>
+    <circle cx="915" cy="46" r="4" stroke="#38BDF8"/>
   </g>
 
-  <!-- ═══ SECTION 2: 36-COLUMN x 6-ROW PURPLE CONTRIBUTION MATRIX ═══ -->
-  <g transform="translate(40, 156)">
-    <!-- Row 1 -->
+  <!-- Single Smooth Traveling Telemetry Orb Along Curve -->
+  <circle r="4.5" fill="#38BDF8" stroke="#FFFFFF" stroke-width="1.5" filter="url(#crispGlow)">
+    <animateMotion dur="6s" repeatCount="indefinite"><mpath href="#commitCurve"/></animateMotion>
+  </circle>
+
+  <!-- ═══ BOTTOM PANEL: CRYSTAL-CLEAR 42-WEEK x 7-DAY PURPLE CONTRIBUTION CALENDAR ═══ -->
+  <!-- Month Labels -->
+  <g transform="translate(75, 182)">
+    <text x="0" y="0" class="month-lbl">JAN</text>
+    <text x="72" y="0" class="month-lbl">FEB</text>
+    <text x="144" y="0" class="month-lbl">MAR</text>
+    <text x="216" y="0" class="month-lbl">APR</text>
+    <text x="288" y="0" class="month-lbl">MAY</text>
+    <text x="360" y="0" class="month-lbl">JUN</text>
+    <text x="432" y="0" class="month-lbl">JUL</text>
+    <text x="504" y="0" class="month-lbl">AUG</text>
+    <text x="576" y="0" class="month-lbl">SEP</text>
+    <text x="648" y="0" class="month-lbl">OCT</text>
+    <text x="720" y="0" class="month-lbl">NOV</text>
+    <text x="792" y="0" class="month-lbl">DEC</text>
+  </g>
+
+  <!-- Day Labels -->
+  <text x="34" y="222" class="axis-lbl">MON</text>
+  <text x="34" y="258" class="axis-lbl">WED</text>
+  <text x="34" y="294" class="axis-lbl">FRI</text>
+
+  <!-- Crisp Static Contribution Squares (42 Columns x 7 Rows, 20px pitch) -->
+  <g transform="translate(75, 194)">
+    <!-- Row 0 (SUN) -->
     <g transform="translate(0, 0)">
-      <rect x="0" width="20" height="15" class="cell c1"/><rect x="24.5" width="20" height="15" class="cell c2"/><rect x="49" width="20" height="15" class="cell c0"/><rect x="73.5" width="20" height="15" class="cell c3"/><rect x="98" width="20" height="15" class="cell c4"/><rect x="122.5" width="20" height="15" class="cell c2"/><rect x="147" width="20" height="15" class="cell c1"/><rect x="171.5" width="20" height="15" class="cell c5"/><rect x="196" width="20" height="15" class="cell c3"/><rect x="220.5" width="20" height="15" class="cell c2"/><rect x="245" width="20" height="15" class="cell c0"/><rect x="269.5" width="20" height="15" class="cell c4"/><rect x="294" width="20" height="15" class="cell c5"/><rect x="318.5" width="20" height="15" class="cell c3"/><rect x="343" width="20" height="15" class="cell c1"/><rect x="367.5" width="20" height="15" class="cell c2"/><rect x="392" width="20" height="15" class="cell c4"/><rect x="416.5" width="20" height="15" class="cell c5"/><rect x="441" width="20" height="15" class="cell c3"/><rect x="465.5" width="20" height="15" class="cell c2"/><rect x="490" width="20" height="15" class="cell c1"/><rect x="514.5" width="20" height="15" class="cell c4"/><rect x="539" width="20" height="15" class="cell c5"/><rect x="563.5" width="20" height="15" class="cell c3"/><rect x="588" width="20" height="15" class="cell c2"/><rect x="612.5" width="20" height="15" class="cell c4"/><rect x="637" width="20" height="15" class="cell c5"/><rect x="661.5" width="20" height="15" class="cell c3"/><rect x="686" width="20" height="15" class="cell c1"/><rect x="710.5" width="20" height="15" class="cell c4"/><rect x="735" width="20" height="15" class="cell c5"/><rect x="759.5" width="20" height="15" class="cell c3"/><rect x="784" width="20" height="15" class="cell c4"/><rect x="808.5" width="20" height="15" class="cell c5"/><rect x="833" width="20" height="15" class="cell c4"/><rect x="857.5" width="20" height="15" class="cell c5"/>
+      <rect x="0" width="15" height="15" class="cell l0"/><rect x="20" width="15" height="15" class="cell l1"/><rect x="40" width="15" height="15" class="cell l0"/><rect x="60" width="15" height="15" class="cell l2"/><rect x="80" width="15" height="15" class="cell l1"/><rect x="100" width="15" height="15" class="cell l3"/><rect x="120" width="15" height="15" class="cell l0"/><rect x="140" width="15" height="15" class="cell l2"/><rect x="160" width="15" height="15" class="cell l4"/><rect x="180" width="15" height="15" class="cell l1"/><rect x="200" width="15" height="15" class="cell l2"/><rect x="220" width="15" height="15" class="cell l0"/><rect x="240" width="15" height="15" class="cell l3"/><rect x="260" width="15" height="15" class="cell l4"/><rect x="280" width="15" height="15" class="cell l2"/><rect x="300" width="15" height="15" class="cell l1"/><rect x="320" width="15" height="15" class="cell l3"/><rect x="340" width="15" height="15" class="cell l5"/><rect x="360" width="15" height="15" class="cell l4"/><rect x="380" width="15" height="15" class="cell l2"/><rect x="400" width="15" height="15" class="cell l1"/><rect x="420" width="15" height="15" class="cell l3"/><rect x="440" width="15" height="15" class="cell l4"/><rect x="460" width="15" height="15" class="cell l2"/><rect x="480" width="15" height="15" class="cell l0"/><rect x="500" width="15" height="15" class="cell l3"/><rect x="520" width="15" height="15" class="cell l5"/><rect x="540" width="15" height="15" class="cell l4"/><rect x="560" width="15" height="15" class="cell l2"/><rect x="580" width="15" height="15" class="cell l3"/><rect x="600" width="15" height="15" class="cell l4"/><rect x="620" width="15" height="15" class="cell l5"/><rect x="640" width="15" height="15" class="cell l3"/><rect x="660" width="15" height="15" class="cell l2"/><rect x="680" width="15" height="15" class="cell l4"/><rect x="700" width="15" height="15" class="cell l5"/><rect x="720" width="15" height="15" class="cell l3"/><rect x="740" width="15" height="15" class="cell l4"/><rect x="760" width="15" height="15" class="cell l5"/><rect x="780" width="15" height="15" class="cell l4"/><rect x="800" width="15" height="15" class="cell l3"/><rect x="820" width="15" height="15" class="cell l5"/>
     </g>
-    <!-- Row 2 -->
-    <g transform="translate(0, 19)">
-      <rect x="0" width="20" height="15" class="cell c2"/><rect x="24.5" width="20" height="15" class="cell c4"/><rect x="49" width="20" height="15" class="cell c3"/><rect x="73.5" width="20" height="15" class="cell c1"/><rect x="98" width="20" height="15" class="cell c5"/><rect x="122.5" width="20" height="15" class="cell c3"/><rect x="147" width="20" height="15" class="cell c2"/><rect x="171.5" width="20" height="15" class="cell c4"/><rect x="196" width="20" height="15" class="cell c1"/><rect x="220.5" width="20" height="15" class="cell c3"/><rect x="245" width="20" height="15" class="cell c5"/><rect x="269.5" width="20" height="15" class="cell c2"/><rect x="294" width="20" height="15" class="cell c4"/><rect x="318.5" width="20" height="15" class="cell c5"/><rect x="343" width="20" height="15" class="cell c3"/><rect x="367.5" width="20" height="15" class="cell c1"/><rect x="392" width="20" height="15" class="cell c3"/><rect x="416.5" width="20" height="15" class="cell c4"/><rect x="441" width="20" height="15" class="cell c5"/><rect x="465.5" width="20" height="15" class="cell c3"/><rect x="490" width="20" height="15" class="cell c2"/><rect x="514.5" width="20" height="15" class="cell c5"/><rect x="539" width="20" height="15" class="cell c4"/><rect x="563.5" width="20" height="15" class="cell c2"/><rect x="588" width="20" height="15" class="cell c5"/><rect x="612.5" width="20" height="15" class="cell c3"/><rect x="637" width="20" height="15" class="cell c4"/><rect x="661.5" width="20" height="15" class="cell c5"/><rect x="686" width="20" height="15" class="cell c3"/><rect x="710.5" width="20" height="15" class="cell c5"/><rect x="735" width="20" height="15" class="cell c4"/><rect x="759.5" width="20" height="15" class="cell c5"/><rect x="784" width="20" height="15" class="cell c3"/><rect x="808.5" width="20" height="15" class="cell c4"/><rect x="833" width="20" height="15" class="cell c5"/><rect x="857.5" width="20" height="15" class="cell c4"/>
+    <!-- Row 1 (MON) -->
+    <g transform="translate(0, 18)">
+      <rect x="0" width="15" height="15" class="cell l1"/><rect x="20" width="15" height="15" class="cell l3"/><rect x="40" width="15" height="15" class="cell l2"/><rect x="60" width="15" height="15" class="cell l1"/><rect x="80" width="15" height="15" class="cell l4"/><rect x="100" width="15" height="15" class="cell l2"/><rect x="120" width="15" height="15" class="cell l3"/><rect x="140" width="15" height="15" class="cell l4"/><rect x="160" width="15" height="15" class="cell l2"/><rect x="180" width="15" height="15" class="cell l3"/><rect x="200" width="15" height="15" class="cell l4"/><rect x="220" width="15" height="15" class="cell l2"/><rect x="240" width="15" height="15" class="cell l5"/><rect x="260" width="15" height="15" class="cell l3"/><rect x="280" width="15" height="15" class="cell l4"/><rect x="300" width="15" height="15" class="cell l2"/><rect x="320" width="15" height="15" class="cell l4"/><rect x="340" width="15" height="15" class="cell l5"/><rect x="360" width="15" height="15" class="cell l3"/><rect x="380" width="15" height="15" class="cell l4"/><rect x="400" width="15" height="15" class="cell l2"/><rect x="420" width="15" height="15" class="cell l5"/><rect x="440" width="15" height="15" class="cell l3"/><rect x="460" width="15" height="15" class="cell l4"/><rect x="480" width="15" height="15" class="cell l2"/><rect x="500" width="15" height="15" class="cell l4"/><rect x="520" width="15" height="15" class="cell l5"/><rect x="540" width="15" height="15" class="cell l3"/><rect x="560" width="15" height="15" class="cell l4"/><rect x="580" width="15" height="15" class="cell l5"/><rect x="600" width="15" height="15" class="cell l3"/><rect x="620" width="15" height="15" class="cell l4"/><rect x="640" width="15" height="15" class="cell l5"/><rect x="660" width="15" height="15" class="cell l4"/><rect x="680" width="15" height="15" class="cell l3"/><rect x="700" width="15" height="15" class="cell l5"/><rect x="720" width="15" height="15" class="cell l4"/><rect x="740" width="15" height="15" class="cell l5"/><rect x="760" width="15" height="15" class="cell l4"/><rect x="780" width="15" height="15" class="cell l5"/><rect x="800" width="15" height="15" class="cell l4"/><rect x="820" width="15" height="15" class="cell l5"/>
     </g>
-    <!-- Row 3 -->
-    <g transform="translate(0, 38)">
-      <rect x="0" width="20" height="15" class="cell c0"/><rect x="24.5" width="20" height="15" class="cell c3"/><rect x="49" width="20" height="15" class="cell c5"/><rect x="73.5" width="20" height="15" class="cell c4"/><rect x="98" width="20" height="15" class="cell c2"/><rect x="122.5" width="20" height="15" class="cell c0"/><rect x="147" width="20" height="15" class="cell c4"/><rect x="171.5" width="20" height="15" class="cell c3"/><rect x="196" width="20" height="15" class="cell c5"/><rect x="220.5" width="20" height="15" class="cell c4"/><rect x="245" width="20" height="15" class="cell c2"/><rect x="269.5" width="20" height="15" class="cell c3"/><rect x="294" width="20" height="15" class="cell c1"/><rect x="318.5" width="20" height="15" class="cell c4"/><rect x="343" width="20" height="15" class="cell c5"/><rect x="367.5" width="20" height="15" class="cell c4"/><rect x="392" width="20" height="15" class="cell c2"/><rect x="416.5" width="20" height="15" class="cell c3"/><rect x="441" width="20" height="15" class="cell c4"/><rect x="465.5" width="20" height="15" class="cell c5"/><rect x="490" width="20" height="15" class="cell c4"/><rect x="514.5" width="20" height="15" class="cell c3"/><rect x="539" width="20" height="15" class="cell c1"/><rect x="563.5" width="20" height="15" class="cell c4"/><rect x="588" width="20" height="15" class="cell c3"/><rect x="612.5" width="20" height="15" class="cell c5"/><rect x="637" width="20" height="15" class="cell c3"/><rect x="661.5" width="20" height="15" class="cell c4"/><rect x="686" width="20" height="15" class="cell c5"/><rect x="710.5" width="20" height="15" class="cell c3"/><rect x="735" width="20" height="15" class="cell c5"/><rect x="759.5" width="20" height="15" class="cell c4"/><rect x="784" width="20" height="15" class="cell c5"/><rect x="808.5" width="20" height="15" class="cell c5"/><rect x="833" width="20" height="15" class="cell c3"/><rect x="857.5" width="20" height="15" class="cell c5"/>
+    <!-- Row 2 (TUE) -->
+    <g transform="translate(0, 36)">
+      <rect x="0" width="15" height="15" class="cell l2"/><rect x="20" width="15" height="15" class="cell l2"/><rect x="40" width="15" height="15" class="cell l4"/><rect x="60" width="15" height="15" class="cell l3"/><rect x="80" width="15" height="15" class="cell l2"/><rect x="100" width="15" height="15" class="cell l0"/><rect x="120" width="15" height="15" class="cell l4"/><rect x="140" width="15" height="15" class="cell l3"/><rect x="160" width="15" height="15" class="cell l5"/><rect x="180" width="15" height="15" class="cell l4"/><rect x="200" width="15" height="15" class="cell l2"/><rect x="220" width="15" height="15" class="cell l3"/><rect x="240" width="15" height="15" class="cell l1"/><rect x="260" width="15" height="15" class="cell l4"/><rect x="280" width="15" height="15" class="cell l5"/><rect x="300" width="15" height="15" class="cell l4"/><rect x="320" width="15" height="15" class="cell l2"/><rect x="340" width="15" height="15" class="cell l3"/><rect x="360" width="15" height="15" class="cell l4"/><rect x="380" width="15" height="15" class="cell l5"/><rect x="400" width="15" height="15" class="cell l4"/><rect x="420" width="15" height="15" class="cell l3"/><rect x="440" width="15" height="15" class="cell l2"/><rect x="460" width="15" height="15" class="cell l4"/><rect x="480" width="15" height="15" class="cell l3"/><rect x="500" width="15" height="15" class="cell l5"/><rect x="520" width="15" height="15" class="cell l3"/><rect x="540" width="15" height="15" class="cell l4"/><rect x="560" width="15" height="15" class="cell l5"/><rect x="580" width="15" height="15" class="cell l3"/><rect x="600" width="15" height="15" class="cell l5"/><rect x="620" width="15" height="15" class="cell l4"/><rect x="640" width="15" height="15" class="cell l5"/><rect x="660" width="15" height="15" class="cell l3"/><rect x="680" width="15" height="15" class="cell l5"/><rect x="700" width="15" height="15" class="cell l4"/><rect x="720" width="15" height="15" class="cell l5"/><rect x="740" width="15" height="15" class="cell l3"/><rect x="760" width="15" height="15" class="cell l5"/><rect x="780" width="15" height="15" class="cell l4"/><rect x="800" width="15" height="15" class="cell l5"/><rect x="820" width="15" height="15" class="cell l4"/>
     </g>
-    <!-- Row 4 -->
-    <g transform="translate(0, 57)">
-      <rect x="0" width="20" height="15" class="cell c3"/><rect x="24.5" width="20" height="15" class="cell c1"/><rect x="49" width="20" height="15" class="cell c2"/><rect x="73.5" width="20" height="15" class="cell c5"/><rect x="98" width="20" height="15" class="cell c3"/><rect x="122.5" width="20" height="15" class="cell c4"/><rect x="147" width="20" height="15" class="cell c5"/><rect x="171.5" width="20" height="15" class="cell c2"/><rect x="196" width="20" height="15" class="cell c4"/><rect x="220.5" width="20" height="15" class="cell c1"/><rect x="245" width="20" height="15" class="cell c3"/><rect x="269.5" width="20" height="15" class="cell c5"/><rect x="294" width="20" height="15" class="cell c3"/><rect x="318.5" width="20" height="15" class="cell c2"/><rect x="343" width="20" height="15" class="cell c4"/><rect x="367.5" width="20" height="15" class="cell c5"/><rect x="392" width="20" height="15" class="cell c5"/><rect x="416.5" width="20" height="15" class="cell c2"/><rect x="441" width="20" height="15" class="cell c1"/><rect x="465.5" width="20" height="15" class="cell c4"/><rect x="490" width="20" height="15" class="cell c5"/><rect x="514.5" width="20" height="15" class="cell c4"/><rect x="539" width="20" height="15" class="cell c3"/><rect x="563.5" width="20" height="15" class="cell c5"/><rect x="588" width="20" height="15" class="cell c4"/><rect x="612.5" width="20" height="15" class="cell c2"/><rect x="637" width="20" height="15" class="cell c5"/><rect x="661.5" width="20" height="15" class="cell c4"/><rect x="686" width="20" height="15" class="cell c2"/><rect x="710.5" width="20" height="15" class="cell c4"/><rect x="735" width="20" height="15" class="cell c3"/><rect x="759.5" width="20" height="15" class="cell c5"/><rect x="784" width="20" height="15" class="cell c4"/><rect x="808.5" width="20" height="15" class="cell c5"/><rect x="833" width="20" height="15" class="cell c4"/><rect x="857.5" width="20" height="15" class="cell c3"/>
+    <!-- Row 3 (WED) -->
+    <g transform="translate(0, 54)">
+      <rect x="0" width="15" height="15" class="cell l3"/><rect x="20" width="15" height="15" class="cell l1"/><rect x="40" width="15" height="15" class="cell l2"/><rect x="60" width="15" height="15" class="cell l5"/><rect x="80" width="15" height="15" class="cell l3"/><rect x="100" width="15" height="15" class="cell l4"/><rect x="120" width="15" height="15" class="cell l5"/><rect x="140" width="15" height="15" class="cell l2"/><rect x="160" width="15" height="15" class="cell l4"/><rect x="180" width="15" height="15" class="cell l1"/><rect x="200" width="15" height="15" class="cell l3"/><rect x="220" width="15" height="15" class="cell l5"/><rect x="240" width="15" height="15" class="cell l3"/><rect x="260" width="15" height="15" class="cell l2"/><rect x="280" width="15" height="15" class="cell l4"/><rect x="300" width="15" height="15" class="cell l5"/><rect x="320" width="15" height="15" class="cell l5"/><rect x="340" width="15" height="15" class="cell l2"/><rect x="360" width="15" height="15" class="cell l1"/><rect x="380" width="15" height="15" class="cell l4"/><rect x="400" width="15" height="15" class="cell l5"/><rect x="420" width="15" height="15" class="cell l4"/><rect x="440" width="15" height="15" class="cell l3"/><rect x="460" width="15" height="15" class="cell l5"/><rect x="480" width="15" height="15" class="cell l4"/><rect x="500" width="15" height="15" class="cell l2"/><rect x="520" width="15" height="15" class="cell l5"/><rect x="540" width="15" height="15" class="cell l4"/><rect x="560" width="15" height="15" class="cell l2"/><rect x="580" width="15" height="15" class="cell l4"/><rect x="600" width="15" height="15" class="cell l3"/><rect x="620" width="15" height="15" class="cell l5"/><rect x="640" width="15" height="15" class="cell l4"/><rect x="660" width="15" height="15" class="cell l5"/><rect x="680" width="15" height="15" class="cell l4"/><rect x="700" width="15" height="15" class="cell l3"/><rect x="720" width="15" height="15" class="cell l5"/><rect x="740" width="15" height="15" class="cell l4"/><rect x="760" width="15" height="15" class="cell l5"/><rect x="780" width="15" height="15" class="cell l3"/><rect x="800" width="15" height="15" class="cell l4"/><rect x="820" width="15" height="15" class="cell l5"/>
     </g>
-    <!-- Row 5 -->
-    <g transform="translate(0, 76)">
-      <rect x="0" width="20" height="15" class="cell c1"/><rect x="24.5" width="20" height="15" class="cell c3"/><rect x="49" width="20" height="15" class="cell c4"/><rect x="73.5" width="20" height="15" class="cell c2"/><rect x="98" width="20" height="15" class="cell c1"/><rect x="122.5" width="20" height="15" class="cell c3"/><rect x="147" width="20" height="15" class="cell c2"/><rect x="171.5" width="20" height="15" class="cell c5"/><rect x="196" width="20" height="15" class="cell c3"/><rect x="220.5" width="20" height="15" class="cell c5"/><rect x="245" width="20" height="15" class="cell c4"/><rect x="269.5" width="20" height="15" class="cell c1"/><rect x="294" width="20" height="15" class="cell c4"/><rect x="318.5" width="20" height="15" class="cell c5"/><rect x="343" width="20" height="15" class="cell c2"/><rect x="367.5" width="20" height="15" class="cell c3"/><rect x="392" width="20" height="15" class="cell c1"/><rect x="416.5" width="20" height="15" class="cell c5"/><rect x="441" width="20" height="15" class="cell c3"/><rect x="465.5" width="20" height="15" class="cell c2"/><rect x="490" width="20" height="15" class="cell c3"/><rect x="514.5" width="20" height="15" class="cell c5"/><rect x="539" width="20" height="15" class="cell c4"/><rect x="563.5" width="20" height="15" class="cell c3"/><rect x="588" width="20" height="15" class="cell c2"/><rect x="612.5" width="20" height="15" class="cell c4"/><rect x="637" width="20" height="15" class="cell c3"/><rect x="661.5" width="20" height="15" class="cell c5"/><rect x="686" width="20" height="15" class="cell c4"/><rect x="710.5" width="20" height="15" class="cell c3"/><rect x="735" width="20" height="15" class="cell c5"/><rect x="759.5" width="20" height="15" class="cell c4"/><rect x="784" width="20" height="15" class="cell c5"/><rect x="808.5" width="20" height="15" class="cell c4"/><rect x="833" width="20" height="15" class="cell c5"/><rect x="857.5" width="20" height="15" class="cell c5"/>
+    <!-- Row 4 (THU) -->
+    <g transform="translate(0, 72)">
+      <rect x="0" width="15" height="15" class="cell l1"/><rect x="20" width="15" height="15" class="cell l3"/><rect x="40" width="15" height="15" class="cell l4"/><rect x="60" width="15" height="15" class="cell l2"/><rect x="80" width="15" height="15" class="cell l1"/><rect x="100" width="15" height="15" class="cell l3"/><rect x="120" width="15" height="15" class="cell l2"/><rect x="140" width="15" height="15" class="cell l5"/><rect x="160" width="15" height="15" class="cell l3"/><rect x="180" width="15" height="15" class="cell l5"/><rect x="200" width="15" height="15" class="cell l4"/><rect x="220" width="15" height="15" class="cell l1"/><rect x="240" width="15" height="15" class="cell l4"/><rect x="260" width="15" height="15" class="cell l5"/><rect x="280" width="15" height="15" class="cell l2"/><rect x="300" width="15" height="15" class="cell l3"/><rect x="320" width="15" height="15" class="cell l1"/><rect x="340" width="15" height="15" class="cell l5"/><rect x="360" width="15" height="15" class="cell l3"/><rect x="380" width="15" height="15" class="cell l2"/><rect x="400" width="15" height="15" class="cell l3"/><rect x="420" width="15" height="15" class="cell l5"/><rect x="440" width="15" height="15" class="cell l4"/><rect x="460" width="15" height="15" class="cell l3"/><rect x="480" width="15" height="15" class="cell l2"/><rect x="500" width="15" height="15" class="cell l4"/><rect x="520" width="15" height="15" class="cell l3"/><rect x="540" width="15" height="15" class="cell l5"/><rect x="560" width="15" height="15" class="cell l4"/><rect x="580" width="15" height="15" class="cell l3"/><rect x="600" width="15" height="15" class="cell l5"/><rect x="620" width="15" height="15" class="cell l4"/><rect x="640" width="15" height="15" class="cell l5"/><rect x="660" width="15" height="15" class="cell l4"/><rect x="680" width="15" height="15" class="cell l5"/><rect x="700" width="15" height="15" class="cell l4"/><rect x="720" width="15" height="15" class="cell l3"/><rect x="740" width="15" height="15" class="cell l5"/><rect x="760" width="15" height="15" class="cell l4"/><rect x="780" width="15" height="15" class="cell l5"/><rect x="800" width="15" height="15" class="cell l5"/><rect x="820" width="15" height="15" class="cell l4"/>
     </g>
-    <!-- Row 6 -->
-    <g transform="translate(0, 95)">
-      <rect x="0" width="20" height="15" class="cell c2"/><rect x="24.5" width="20" height="15" class="cell c5"/><rect x="49" width="20" height="15" class="cell c3"/><rect x="73.5" width="20" height="15" class="cell c4"/><rect x="98" width="20" height="15" class="cell c2"/><rect x="122.5" width="20" height="15" class="cell c4"/><rect x="147" width="20" height="15" class="cell c5"/><rect x="171.5" width="20" height="15" class="cell c3"/><rect x="196" width="20" height="15" class="cell c2"/><rect x="220.5" width="20" height="15" class="cell c4"/><rect x="245" width="20" height="15" class="cell c5"/><rect x="269.5" width="20" height="15" class="cell c3"/><rect x="294" width="20" height="15" class="cell c2"/><rect x="318.5" width="20" height="15" class="cell c4"/><rect x="343" width="20" height="15" class="cell c3"/><rect x="367.5" width="20" height="15" class="cell c5"/><rect x="392" width="20" height="15" class="cell c4"/><rect x="416.5" width="20" height="15" class="cell c3"/><rect x="441" width="20" height="15" class="cell c5"/><rect x="465.5" width="20" height="15" class="cell c4"/><rect x="490" width="20" height="15" class="cell c5"/><rect x="514.5" width="20" height="15" class="cell c3"/><rect x="539" width="20" height="15" class="cell c5"/><rect x="563.5" width="20" height="15" class="cell c4"/><rect x="588" width="20" height="15" class="cell c5"/><rect x="612.5" width="20" height="15" class="cell c3"/><rect x="637" width="20" height="15" class="cell c4"/><rect x="661.5" width="20" height="15" class="cell c5"/><rect x="686" width="20" height="15" class="cell c3"/><rect x="710.5" width="20" height="15" class="cell c5"/><rect x="735" width="20" height="15" class="cell c4"/><rect x="759.5" width="20" height="15" class="cell c3"/><rect x="784" width="20" height="15" class="cell c4"/><rect x="808.5" width="20" height="15" class="cell c5"/><rect x="833" width="20" height="15" class="cell c3"/><rect x="857.5" width="20" height="15" class="cell c5"/>
+    <!-- Row 5 (FRI) -->
+    <g transform="translate(0, 90)">
+      <rect x="0" width="15" height="15" class="cell l2"/><rect x="20" width="15" height="15" class="cell l4"/><rect x="40" width="15" height="15" class="cell l3"/><rect x="60" width="15" height="15" class="cell l4"/><rect x="80" width="15" height="15" class="cell l2"/><rect x="100" width="15" height="15" class="cell l4"/><rect x="120" width="15" height="15" class="cell l5"/><rect x="140" width="15" height="15" class="cell l3"/><rect x="160" width="15" height="15" class="cell l2"/><rect x="180" width="15" height="15" class="cell l4"/><rect x="200" width="15" height="15" class="cell l5"/><rect x="220" width="15" height="15" class="cell l3"/><rect x="240" width="15" height="15" class="cell l2"/><rect x="260" width="15" height="15" class="cell l4"/><rect x="280" width="15" height="15" class="cell l3"/><rect x="300" width="15" height="15" class="cell l5"/><rect x="320" width="15" height="15" class="cell l4"/><rect x="340" width="15" height="15" class="cell l3"/><rect x="360" width="15" height="15" class="cell l5"/><rect x="380" width="15" height="15" class="cell l4"/><rect x="400" width="15" height="15" class="cell l5"/><rect x="420" width="15" height="15" class="cell l3"/><rect x="440" width="15" height="15" class="cell l5"/><rect x="460" width="15" height="15" class="cell l4"/><rect x="480" width="15" height="15" class="cell l5"/><rect x="500" width="15" height="15" class="cell l3"/><rect x="520" width="15" height="15" class="cell l4"/><rect x="540" width="15" height="15" class="cell l5"/><rect x="560" width="15" height="15" class="cell l3"/><rect x="580" width="15" height="15" class="cell l5"/><rect x="600" width="15" height="15" class="cell l4"/><rect x="620" width="15" height="15" class="cell l3"/><rect x="640" width="15" height="15" class="cell l4"/><rect x="660" width="15" height="15" class="cell l5"/><rect x="680" width="15" height="15" class="cell l3"/><rect x="700" width="15" height="15" class="cell l5"/><rect x="720" width="15" height="15" class="cell l4"/><rect x="740" width="15" height="15" class="cell l5"/><rect x="760" width="15" height="15" class="cell l3"/><rect x="780" width="15" height="15" class="cell l4"/><rect x="800" width="15" height="15" class="cell l5"/><rect x="820" width="15" height="15" class="cell l5"/>
+    </g>
+    <!-- Row 6 (SAT) -->
+    <g transform="translate(0, 108)">
+      <rect x="0" width="15" height="15" class="cell l0"/><rect x="20" width="15" height="15" class="cell l2"/><rect x="40" width="15" height="15" class="cell l1"/><rect x="60" width="15" height="15" class="cell l3"/><rect x="80" width="15" height="15" class="cell l4"/><rect x="100" width="15" height="15" class="cell l2"/><rect x="120" width="15" height="15" class="cell l3"/><rect x="140" width="15" height="15" class="cell l1"/><rect x="160" width="15" height="15" class="cell l4"/><rect x="180" width="15" height="15" class="cell l3"/><rect x="200" width="15" height="15" class="cell l2"/><rect x="220" width="15" height="15" class="cell l4"/><rect x="240" width="15" height="15" class="cell l3"/><rect x="260" width="15" height="15" class="cell l1"/><rect x="280" width="15" height="15" class="cell l4"/><rect x="300" width="15" height="15" class="cell l3"/><rect x="320" width="15" height="15" class="cell l2"/><rect x="340" width="15" height="15" class="cell l4"/><rect x="360" width="15" height="15" class="cell l3"/><rect x="380" width="15" height="15" class="cell l5"/><rect x="400" width="15" height="15" class="cell l2"/><rect x="420" width="15" height="15" class="cell l4"/><rect x="440" width="15" height="15" class="cell l3"/><rect x="460" width="15" height="15" class="cell l2"/><rect x="480" width="15" height="15" class="cell l4"/><rect x="500" width="15" height="15" class="cell l5"/><rect x="520" width="15" height="15" class="cell l2"/><rect x="540" width="15" height="15" class="cell l3"/><rect x="560" width="15" height="15" class="cell l4"/><rect x="580" width="15" height="15" class="cell l2"/><rect x="600" width="15" height="15" class="cell l3"/><rect x="620" width="15" height="15" class="cell l5"/><rect x="640" width="15" height="15" class="cell l3"/><rect x="660" width="15" height="15" class="cell l4"/><rect x="680" width="15" height="15" class="cell l2"/><rect x="700" width="15" height="15" class="cell l4"/><rect x="720" width="15" height="15" class="cell l5"/><rect x="740" width="15" height="15" class="cell l3"/><rect x="760" width="15" height="15" class="cell l4"/><rect x="780" width="15" height="15" class="cell l5"/><rect x="800" width="15" height="15" class="cell l4"/><rect x="820" width="15" height="15" class="cell l5"/>
     </g>
   </g>
 
-  <!-- Holographic Radar Scanner Beam Sweeping Across the Matrix -->
-  <g>
-    <rect x="40" y="152" width="44" height="118" fill="url(#scanSweep)" opacity="0.42">
-      <animate attributeName="x" values="40;875;40" dur="6.5s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="82" y="152" width="2.5" height="118" fill="#38BDF8" filter="url(#neon)" opacity="0.95">
-      <animate attributeName="x" values="82;917;82" dur="6.5s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-
-  <!-- ═══ SECTION 3: ANIMATED 3D PURPLE EQUALIZER / COMMIT DENSITY TOWERS (BOTTOM) ═══ -->
-  <text x="40" y="302" class="hud-sub">// REAL-TIME COMMIT DENSITY SPECTRUM // 36-NODE PULSE</text>
-
-  <g transform="translate(40, 316)">
-    <!-- 36 Animated Vertical Pulse Columns -->
-    <rect x="0" y="18" width="16" height="52" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="20;58;20" dur="1.8s" repeatCount="indefinite"/><animate attributeName="y" values="50;12;50" dur="1.8s" repeatCount="indefinite"/></rect>
-    <rect x="24.5" y="10" width="16" height="60" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="45;18;45" dur="1.5s" repeatCount="indefinite"/><animate attributeName="y" values="25;52;25" dur="1.5s" repeatCount="indefinite"/></rect>
-    <rect x="49" y="25" width="16" height="45" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="28;64;28" dur="2.1s" repeatCount="indefinite"/><animate attributeName="y" values="42;6;42" dur="2.1s" repeatCount="indefinite"/></rect>
-    <rect x="73.5" y="12" width="16" height="58" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="56;24;56" dur="1.7s" repeatCount="indefinite"/><animate attributeName="y" values="14;46;14" dur="1.7s" repeatCount="indefinite"/></rect>
-    <rect x="98" y="20" width="16" height="50" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="32;62;32" dur="1.9s" repeatCount="indefinite"/><animate attributeName="y" values="38;8;38" dur="1.9s" repeatCount="indefinite"/></rect>
-    <rect x="122.5" y="8" width="16" height="62" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="60;22;60" dur="1.4s" repeatCount="indefinite"/><animate attributeName="y" values="10;48;10" dur="1.4s" repeatCount="indefinite"/></rect>
-    <rect x="147" y="22" width="16" height="48" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="24;54;24" dur="2.0s" repeatCount="indefinite"/><animate attributeName="y" values="46;16;46" dur="2.0s" repeatCount="indefinite"/></rect>
-    <rect x="171.5" y="6" width="16" height="64" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="64;30;64" dur="1.6s" repeatCount="indefinite"/><animate attributeName="y" values="6;40;6" dur="1.6s" repeatCount="indefinite"/></rect>
-    <rect x="196" y="16" width="16" height="54" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="38;66;38" dur="1.8s" repeatCount="indefinite"/><animate attributeName="y" values="32;4;32" dur="1.8s" repeatCount="indefinite"/></rect>
-    <rect x="220.5" y="24" width="16" height="46" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="48;16;48" dur="2.2s" repeatCount="indefinite"/><animate attributeName="y" values="22;54;22" dur="2.2s" repeatCount="indefinite"/></rect>
-    <rect x="245" y="10" width="16" height="60" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="26;62;26" dur="1.5s" repeatCount="indefinite"/><animate attributeName="y" values="44;8;44" dur="1.5s" repeatCount="indefinite"/></rect>
-    <rect x="269.5" y="14" width="16" height="56" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="58;28;58" dur="1.7s" repeatCount="indefinite"/><animate attributeName="y" values="12;42;12" dur="1.7s" repeatCount="indefinite"/></rect>
-    <rect x="294" y="20" width="16" height="50" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="30;60;30" dur="1.9s" repeatCount="indefinite"/><animate attributeName="y" values="40;10;40" dur="1.9s" repeatCount="indefinite"/></rect>
-    <rect x="318.5" y="8" width="16" height="62" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="62;20;62" dur="1.6s" repeatCount="indefinite"/><animate attributeName="y" values="8;50;8" dur="1.6s" repeatCount="indefinite"/></rect>
-    <rect x="343" y="18" width="16" height="52" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="34;66;34" dur="2.0s" repeatCount="indefinite"/><animate attributeName="y" values="36;4;36" dur="2.0s" repeatCount="indefinite"/></rect>
-    <rect x="367.5" y="12" width="16" height="58" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="52;22;52" dur="1.4s" repeatCount="indefinite"/><animate attributeName="y" values="18;48;18" dur="1.4s" repeatCount="indefinite"/></rect>
-    <rect x="392" y="22" width="16" height="48" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="22;58;22" dur="1.8s" repeatCount="indefinite"/><animate attributeName="y" values="48;12;48" dur="1.8s" repeatCount="indefinite"/></rect>
-    <rect x="416.5" y="6" width="16" height="64" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="64;26;64" dur="1.5s" repeatCount="indefinite"/><animate attributeName="y" values="6;44;6" dur="1.5s" repeatCount="indefinite"/></rect>
-    <rect x="441" y="16" width="16" height="54" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="36;64;36" dur="2.1s" repeatCount="indefinite"/><animate attributeName="y" values="34;6;34" dur="2.1s" repeatCount="indefinite"/></rect>
-    <rect x="465.5" y="10" width="16" height="60" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="58;18;58" dur="1.7s" repeatCount="indefinite"/><animate attributeName="y" values="12;52;12" dur="1.7s" repeatCount="indefinite"/></rect>
-    <rect x="490" y="20" width="16" height="50" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="28;62;28" dur="1.9s" repeatCount="indefinite"/><animate attributeName="y" values="42;8;42" dur="1.9s" repeatCount="indefinite"/></rect>
-    <rect x="514.5" y="8" width="16" height="62" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="60;24;60" dur="1.6s" repeatCount="indefinite"/><animate attributeName="y" values="10;46;10" dur="1.6s" repeatCount="indefinite"/></rect>
-    <rect x="539" y="18" width="16" height="52" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="32;60;32" dur="1.4s" repeatCount="indefinite"/><animate attributeName="y" values="38;10;38" dur="1.4s" repeatCount="indefinite"/></rect>
-    <rect x="563.5" y="12" width="16" height="58" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="54;20;54" dur="2.0s" repeatCount="indefinite"/><animate attributeName="y" values="16;50;16" dur="2.0s" repeatCount="indefinite"/></rect>
-    <rect x="588" y="22" width="16" height="48" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="24;64;24" dur="1.7s" repeatCount="indefinite"/><animate attributeName="y" values="46;6;46" dur="1.7s" repeatCount="indefinite"/></rect>
-    <rect x="612.5" y="6" width="16" height="64" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="64;28;64" dur="1.5s" repeatCount="indefinite"/><animate attributeName="y" values="6;42;6" dur="1.5s" repeatCount="indefinite"/></rect>
-    <rect x="637" y="14" width="16" height="56" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="40;66;40" dur="1.8s" repeatCount="indefinite"/><animate attributeName="y" values="30;4;30" dur="1.8s" repeatCount="indefinite"/></rect>
-    <rect x="661.5" y="10" width="16" height="60" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="56;22;56" dur="2.1s" repeatCount="indefinite"/><animate attributeName="y" values="14;48;14" dur="2.1s" repeatCount="indefinite"/></rect>
-    <rect x="686" y="20" width="16" height="50" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="30;62;30" dur="1.6s" repeatCount="indefinite"/><animate attributeName="y" values="40;8;40" dur="1.6s" repeatCount="indefinite"/></rect>
-    <rect x="710.5" y="8" width="16" height="62" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="62;26;62" dur="1.4s" repeatCount="indefinite"/><animate attributeName="y" values="8;44;8" dur="1.4s" repeatCount="indefinite"/></rect>
-    <rect x="735" y="16" width="16" height="54" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="34;64;34" dur="1.9s" repeatCount="indefinite"/><animate attributeName="y" values="36;6;36" dur="1.9s" repeatCount="indefinite"/></rect>
-    <rect x="759.5" y="10" width="16" height="60" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="58;20;58" dur="1.7s" repeatCount="indefinite"/><animate attributeName="y" values="12;50;12" dur="1.7s" repeatCount="indefinite"/></rect>
-    <rect x="784" y="18" width="16" height="52" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="28;66;28" dur="1.5s" repeatCount="indefinite"/><animate attributeName="y" values="42;4;42" dur="1.5s" repeatCount="indefinite"/></rect>
-    <rect x="808.5" y="6" width="16" height="64" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="64;24;64" dur="2.0s" repeatCount="indefinite"/><animate attributeName="y" values="6;46;6" dur="2.0s" repeatCount="indefinite"/></rect>
-    <rect x="833" y="14" width="16" height="56" rx="3" fill="url(#barGrad)"><animate attributeName="height" values="38;64;38" dur="1.6s" repeatCount="indefinite"/><animate attributeName="y" values="32;6;32" dur="1.6s" repeatCount="indefinite"/></rect>
-    <rect x="857.5" y="8" width="16" height="62" rx="3" fill="url(#cyanBarGrad)"><animate attributeName="height" values="62;18;62" dur="1.8s" repeatCount="indefinite"/><animate attributeName="y" values="8;52;8" dur="1.8s" repeatCount="indefinite"/></rect>
-  </g>
-
-  <!-- Footer Legend -->
-  <text x="40" y="418" class="hud-sub">// MATRIX INTENSITY SCALE</text>
-  <g transform="translate(725, 407)">
-    <text x="0" y="11" class="hud-sub" style="fill:#71717A;">LOW</text>
-    <rect x="36" y="0" width="13" height="13" rx="3" fill="#110E1C" stroke="#27272A"/>
-    <rect x="53" y="0" width="13" height="13" rx="3" fill="#2E1B5B"/>
-    <rect x="70" y="0" width="13" height="13" rx="3" fill="#4F46E5"/>
-    <rect x="87" y="0" width="13" height="13" rx="3" fill="#7C3AED"/>
-    <rect x="104" y="0" width="13" height="13" rx="3" fill="#A855F7"/>
-    <rect x="121" y="0" width="13" height="13" rx="3" fill="#38BDF8"/>
-    <text x="142" y="11" class="hud-sub" style="fill:#38BDF8;">PEAK</text>
+  <!-- Crisp Legend Row -->
+  <text x="75" y="358" class="axis-lbl">// ANNUAL CONTRIBUTION CALENDAR (HIGH-CONTRAST PURPLE PALETTE)</text>
+  <g transform="translate(725, 346)">
+    <text x="0" y="11" class="axis-lbl">LESS</text>
+    <rect x="34" y="0" width="13" height="13" class="cell l0"/>
+    <rect x="51" y="0" width="13" height="13" class="cell l1"/>
+    <rect x="68" y="0" width="13" height="13" class="cell l2"/>
+    <rect x="85" y="0" width="13" height="13" class="cell l3"/>
+    <rect x="102" y="0" width="13" height="13" class="cell l4"/>
+    <rect x="119" y="0" width="13" height="13" class="cell l5"/>
+    <text x="140" y="11" class="axis-lbl" style="fill:#C084FC;">MORE</text>
   </g>
 </svg>

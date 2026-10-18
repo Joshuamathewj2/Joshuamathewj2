@@ -173,8 +173,8 @@
 
 <br /><br />
 
-<!-- 2. Live Purple Neon Commit Activity Wave -->
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Joshuamathewj2&bg_color=050507&color=C084FC&line=a855f7&point=38BDF8&area=true&area_color=4F46E5&hide_border=false&border_color=27272A&radius=16&custom_title=%2F%2F+LIVE+GITHUB+COMMIT+FREQUENCY+WAVE" alt="Live Purple Activity Graph" />
+<!-- 2. Live Purple Neon Commit Activity Wave (Crisp High-Contrast Mode) -->
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Joshuamathewj2&bg_color=06060A&color=F5F5F5&line=A855F7&point=38BDF8&area=false&hide_border=false&border_color=27272A&radius=16&custom_title=%2F%2F+LIVE+GITHUB+COMMIT+ACTIVITY+GRAPH" alt="Live Purple Activity Graph" />
 
 <br /><br />
 
