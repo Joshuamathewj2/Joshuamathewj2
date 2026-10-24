@@ -1,19 +1,19 @@
 <div align="center">
 
-<!-- ═════════════════════════════════════════════════════════════════[...]
+<!-- ═══════════════════════════════════════════════════════════════════════════
      01 // ANIMATED PURPLE MATRIX & 3D REACTOR HERO HUD
-══════════════════════════════════════════════════════════════════��[...]
+════════════════════════════════════════════════════════════════════════════ -->
 <img src="./hero-matrix-hud.svg" width="100%" alt="Joshua A — Animated Purple Matrix & Reactor HUD" />
 
 <br />
 
 <!-- ── Dual Animated Glowing Typewriters ── -->
 <a href="https://github.com/Joshuamathewj2">
-  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=25&duration=2600&pause=700&color=A855F7&background=05050500&center=true&vCenter=true&width=860&height=42&lines=ARCHITECTING+[...]
+  <img src="https://readme-typing-svg.demolab.com?font=Syne&weight=800&size=25&duration=2600&pause=700&color=A855F7&background=05050500&center=true&vCenter=true&width=860&height=42&lines=ARCHITECTING+AUTONOMOUS+AI+AGENTS;REAL-TIME+COMPUTER+VISION+%26+3D+HUDs;IMMERSIVE+FULL-STACK+%26+WEBGL+EXPERIENCES;TALK+IS+CHEAP.+SHOW+ME+THE+CODE." alt="Headline Typing Animation" />
 </a>
 <br />
-a href="https://github.com/Joshuamathewj2">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=13&duration=3200&pause=900&color=38BDF8&background=05050500&center=true&vCenter=true&width=760&height=26&lines=%3E[...]
+<a href="https://github.com/Joshuamathewj2">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=13&duration=3200&pause=900&color=38BDF8&background=05050500&center=true&vCenter=true&width=760&height=26&lines=%3E+status%3A+open_to_internships+%2F%2F+LICET+CSE+'28+(8.9+CGPA);%3E+rank+%2311+%2F+1%2C773+%40+HackerRank+Orchestrate+AI+Challenge;%3E+stack%3A+Python+%C2%B7+TypeScript+%C2%B7+React+19+%C2%B7+Next.js+%C2%B7+FastAPI+%C2%B7+Three.js" alt="Sub-Telemetry Typing Animation" />
 </a>
 
 <br /><br />
@@ -34,20 +34,20 @@ a href="https://github.com/Joshuamathewj2">
 
 <img src="./readme-divider.svg" width="100%" alt="Animated Divider" />
 
-<!-- ═════════════════════════════════════════════════════════════════[...]
+<!-- ═══════════════════════════════════════════════════════════════════════════
      02 // ANIMATED NEURAL CORE & LIVE DATA PACKET NETWORK
-══════════════════════════════════════════════════════════════════��[...]
+════════════════════════════════════════════════════════════════════════════ -->
 <img src="./readme-neural-core.svg" width="100%" alt="Animated Neural Core Architecture" />
 
 <br />
 
 <img src="./readme-divider.svg" width="100%" alt="Animated Divider" />
 
-<!-- ═════════════════════════════════════════════════════════════════[...]
+<!-- ═══════════════════════════════════════════════════════════════════════════
      03 // VISUAL TECH ARSENAL (ICON DOCKS)
-══════════════════════════════════════════════════════════════════��[...]
+════════════════════════════════════════════════════════════════════════════ -->
 <a href="https://github.com/Joshuamathewj2">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=4000&pause=1500&color=C084FC&background=05050500&center=true&vCenter=true&width=500&height=34&lines=%2[...]
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=4000&pause=1500&color=C084FC&background=05050500&center=true&vCenter=true&width=500&height=34&lines=%2F%2F+ENGINEERING+TOOLKIT+%3A%3A+ACTIVE+NODES" alt="Toolkit Header" />
 </a>
 
 <br />
@@ -71,11 +71,11 @@ a href="https://github.com/Joshuamathewj2">
 
 <img src="./readme-divider.svg" width="100%" alt="Animated Divider" />
 
-<!-- ═════════════════════════════════════════════════════════════════[...]
+<!-- ═══════════════════════════════════════════════════════════════════════════
      04 // ANIMATED GLASS COIN ORBIT & DEPLOYED SYSTEMS MATRIX
-══════════════════════════════════════════════════════════════════��[...]
+════════════════════════════════════════════════════════════════════════════ -->
 <a href="https://github.com/Joshuamathewj2?tab=repositories">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=4000&pause=1500&color=C084FC&background=05050500&center=true&vCenter=true&width=520&height=34&lines=%2[...]
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=4000&pause=1500&color=C084FC&background=05050500&center=true&vCenter=true&width=520&height=34&lines=%2F%2F+DEPLOYED+SYSTEMS+%3A%3A+VISUAL+TELEMETRY" alt="Systems Header" />
 </a>
 
 <br />
@@ -159,11 +159,11 @@ a href="https://github.com/Joshuamathewj2">
 
 <img src="./readme-divider.svg" width="100%" alt="Animated Divider" />
 
-<!-- ═════════════════════════════════════════════════════════════════[...]
+<!-- ═══════════════════════════════════════════════════════════════════════════
      05 // CREATIVE PURPLE CONTRIBUTION MATRIX & SPECTRUM ANIMATIONS
-══════════════════════════════════════════════════════════════════��[...]
+════════════════════════════════════════════════════════════════════════════ -->
 <a href="https://github.com/Joshuamathewj2">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=3800&pause=1200&color=C084FC&background=05050500&center=true&vCenter=true&width=580&height=34&lines=%2[...]
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=3800&pause=1200&color=C084FC&background=05050500&center=true&vCenter=true&width=580&height=34&lines=%2F%2F+PURPLE+MATRIX+%3A%3A+CONTRIBUTION+SPECTRUM" alt="Contribution Telemetry Header" />
 </a>
 
 <br />
@@ -174,24 +174,24 @@ a href="https://github.com/Joshuamathewj2">
 <br /><br />
 
 <!-- 2. Live Purple Neon Commit Activity Wave (Crisp High-Contrast Mode) -->
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Joshuamathewj2&bg_color=06060A&color=F5F5F5&line=A855F7&point=38BDF8&area=false&hide_border=false&border_color=272[...]
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Joshuamathewj2&bg_color=06060A&color=F5F5F5&line=A855F7&point=38BDF8&area=false&hide_border=false&border_color=27272A&radius=16&custom_title=%2F%2F+LIVE+GITHUB+COMMIT+ACTIVITY+GRAPH" alt="Live Purple Activity Graph" />
 
 <br /><br />
 
 <!-- 3. Purple Glow Streak & Telemetry HUD Cards -->
 <p align="center">
-  <img height="175" src="https://streak-stats.demolab.com?user=Joshuamathewj2&theme=dark&background=050507&border=27272A&border_radius=14&ring=a855f7&fire=38BDF8&currStreakLabel=C084FC&sideLabels=A1A1[...]
+  <img height="175" src="https://streak-stats.demolab.com?user=Joshuamathewj2&theme=dark&background=050507&border=27272A&border_radius=14&ring=a855f7&fire=38BDF8&currStreakLabel=C084FC&sideLabels=A1A1AA&currStreakNum=F5F5F5&sideNums=F5F5F5&dates=71717A" alt="GitHub Streak" />
   <img height="175" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Joshuamathewj2&theme=2077" alt="2077 Cyberpunk Contribution Summary" />
 </p>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Joshuamathewj2&show_icons=true&bg_color=050507&border_color=27272A&border_radius=14&title_color=a855f7&icon_color=38BDF8&te[...]
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joshuamathewj2&layout=compact&langs_count=6&bg_color=050507&border_color=27272A&border_radius=14&title_color=a85[...]
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Joshuamathewj2&show_icons=true&bg_color=050507&border_color=27272A&border_radius=14&title_color=a855f7&icon_color=38BDF8&text_color=F5F5F5&ring_color=4F46E5" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joshuamathewj2&layout=compact&langs_count=6&bg_color=050507&border_color=27272A&border_radius=14&title_color=a855f7&text_color=F5F5F5" alt="Top Languages" />
 </p>
 
-<!-- ═════════════════════════════════════════════════════════════════[...]
+<!-- ═══════════════════════════════════════════════════════════════════════════
      06 // ANIMATED WAVING PURPLE FOOTER
-══════════════════════════════════════════════════════════════════��[...]
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:050507,35:1e1b4b,70:4F46E5,100:a855f7&height=130&section=footer&text=LET'S%20BUILD%20WHAT'S%20NEXT.&fontSize=24&fontCol[...]
+════════════════════════════════════════════════════════════════════════════ -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:050507,35:1e1b4b,70:4F46E5,100:a855f7&height=130&section=footer&text=LET'S%20BUILD%20WHAT'S%20NEXT.&fontSize=24&fontColor=F5F5F5&fontAlignY=68" alt="Footer Wave" />
 
 </div>
