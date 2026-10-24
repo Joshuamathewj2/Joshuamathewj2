@@ -13,7 +13,7 @@
 </a>
 <br />
 <a href="https://github.com/Joshuamathewj2">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=13&duration=3200&pause=900&color=38BDF8&background=05050500&center=true&vCenter=true&width=760&height=26&lines=%3E+status%3A+open_to_internships+%2F%2F+LICET+CSE+'28+(8.9+CGPA);%3E+rank+%2311+%2F+1%2C773+%40+HackerRank+Orchestrate+AI+Challenge;%3E+stack%3A+Python+%C2%B7+TypeScript+%C2%B7+React+19+%C2%B7+Next.js+%C2%B7+FastAPI+%C2%B7+Three.js" alt="Sub-Telemetry Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=13&duration=3200&pause=900&color=38BDF8&background=05050500&center=true&vCenter=true&width=760&height=26&lines=%3E+status%3A+open_to_internships+%2F%2F+LICET+CSE+'28;%3E+rank+%2311+%2F+1%2C773+%40+HackerRank+Orchestrate+AI+Challenge;%3E+stack%3A+Python+%C2%B7+TypeScript+%C2%B7+React+19+%C2%B7+Next.js+%C2%B7+FastAPI+%C2%B7+Three.js" alt="Sub-Telemetry Typing Animation" />
 </a>
 
 <br /><br />
